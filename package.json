@@ -1,0 +1,36 @@
+{
+  "name": "chatbot-microservice",
+  "version": "1.0.0",
+  "description": "Chatbot microservice with ElysiaJS, Drizzle ORM, and OpenRouter API",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/app.ts",
+    "start": "bun src/app.ts",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg",
+    "db:studio": "drizzle-kit studio"
+  },
+  "keywords": [
+    "chatbot",
+    "microservice",
+    "elysia",
+    "bun",
+    "drizzle",
+    "openrouter"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "elysia": "^0.8.0",
+    "drizzle-orm": "^0.29.0",
+    "postgres": "^3.4.0",
+    "@elysiajs/cors": "^0.8.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.0",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}
+
